@@ -2,7 +2,7 @@ from _myfunction import *
 
 def CVSSCal(cveid):
     '''根据CVE查询AV、AC、AU'''
-    file = './venv/src/cveid.xls'
+    file = './src/cveid.xls'
     data = xlrd.open_workbook(file)
     table = data.sheets()[0]
     cve = table.col_values(0)
